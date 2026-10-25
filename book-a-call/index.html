@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Call | Freedom Partners Group</title>
+<meta name="description" content="Book a call with Donald Maycott to talk about joining eXp Realty under Freedom Partners Group.">
+<link rel="icon" href="https://s3.amazonaws.com/webflow-prod-assets/6967a9c0df502d8cfc88079a/6967b3fbef5449437ef517ad_FPG_logo_icon_32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/tokens.css">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav_container">
+    <a href="/" class="nav_left"><img class="nav_logo-icon" src="https://s3.amazonaws.com/webflow-prod-assets/6967a9c0df502d8cfc88079a/6a4cf11b6efad3ff3b398ba0_freedom-partners-group-logo-navbar-v3.png" alt="Freedom Partners Group"></a>
+    <div class="nav_menu">
+      <ul class="nav_menu-list">
+        <li><a class="nav_link" href="/">Home</a></li>
+        <li><a class="nav_link" href="/new-agents">New Agents</a></li>
+        <li><a class="nav_link" href="/book-a-call">Book a Call</a></li>
+        <li class="nav_dropdown-menu">
+          <span class="nav_link">Agent Growth</span>
+          <ul class="nav_dropdown-list">
+            <li><a class="nav_dropdown-link" href="/mentorship">Mentorship</a></li>
+            <li><a class="nav_dropdown-link" href="/accountability">Accountability</a></li>
+            <li><a class="nav_dropdown-link" href="/training">Training</a></li>
+          </ul>
+        </li>
+        <li class="nav_dropdown-menu">
+          <span class="nav_link">Business Tools</span>
+          <ul class="nav_dropdown-list">
+            <li><a class="nav_dropdown-link" href="/workflows">Workflows</a></li>
+            <li><a class="nav_dropdown-link" href="/resources">Resources</a></li>
+            <li><a class="nav_dropdown-link" href="/support">Support</a></li>
+          </ul>
+        </li>
+        <li class="nav_dropdown-menu">
+          <span class="nav_link">Career Pathways</span>
+          <ul class="nav_dropdown-list">
+            <li><a class="nav_dropdown-link" href="/onboarding">Onboarding</a></li>
+            <li><a class="nav_dropdown-link" href="/development">Development</a></li>
+            <li><a class="nav_dropdown-link" href="/community">Community</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="button-group"><a class="button on-accent-secondary" href="/apply">Apply</a></div>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="container is-small">
+    <h1>Book a Call With Donald</h1>
+    <p class="subheading" style="max-width:70ch;">Book a 20–30 minute call with Donald Maycott, founder of Freedom Partners Group, about joining eXp Realty under FPG — as a new agent, an experienced agent, or bringing your team over. We'll cover your goals, your timeline, and whether FPG's systems and mentorship are the right fit. A Google Meet link is included in your confirmation. Please be on time — if you miss your scheduled call, you get one opportunity to reschedule. After a second missed call, we ask you rebook once you're ready to commit to a time.</p>
+    <div class="button-group">
+      <a class="button" href="https://calendar.app.google/sHwS4ALF1uUQqJ9c7" target="_blank" rel="noopener">Pick a time</a>
+    </div>
+    <p style="font-size:0.85rem;color:var(--text-secondary);margin-top:8px;">Opens Google Calendar in a new tab — pick a time that works, this page stays open.</p>
+  </div>
+</section>
+
+<section class="section is-secondary">
+  <div class="container is-small">
+    <div class="header is-align-center">
+      <p class="eyebrow">Before Your Call</p>
+      <h2>Tell Us About You</h2>
+      <p class="subheading" style="margin-inline:auto;text-align:center;">Share a few details so Donald can prep for your call — takes less than a minute.</p>
+    </div>
+
+    <form id="leadForm" class="form" style="margin:0 auto;">
+      <div>
+        <label class="input_label" for="name">Full Name</label>
+        <input class="input_field" type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label class="input_label" for="phone">Phone Number</label>
+        <input class="input_field" type="tel" id="phone" name="phone" required>
+      </div>
+      <div>
+        <label class="input_label" for="email">Email Address</label>
+        <input class="input_field" type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label class="input_label" for="brokerage">Current Brokerage</label>
+        <input class="input_field" type="text" id="brokerage" name="brokerage" required>
+      </div>
+      <div>
+        <label class="input_label" for="revenue">Revenue — Past 12 Months</label>
+        <input class="input_field" type="text" id="revenue" name="revenue" placeholder="e.g. $120,000 — leave blank if you're a new agent">
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="newAgent" name="newAgent">
+        <label for="newAgent" style="font-size:0.92rem;">I'm a new agent — no production yet</label>
+      </div>
+      <button type="submit" class="button" id="submitBtn">Request a Call</button>
+      <p class="form-status" id="formStatus" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <img class="nav_logo-icon" style="filter:brightness(0) invert(1);" src="https://s3.amazonaws.com/webflow-prod-assets/6967a9c0df502d8cfc88079a/6a4cf11b6efad3ff3b398ba0_freedom-partners-group-logo-navbar-v3.png" alt="Freedom Partners Group">
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/apply">Why Join</a></li>
+      <li><a href="/book-a-call">Book a Call</a></li>
+      <li><a href="/support">Support</a></li>
+      <li><a href="/privacy">Privacy Policy</a></li>
+      <li><a href="/terms">Terms of Use</a></li>
+      <li><a href="/accessibility">Accessibility Statement</a></li>
+    </ul>
+    <p class="footer-copy">All rights reserved © 2026 Freedom Partners Group</p>
+    <p class="footer-disclosure">Freedom Partners Group is a real estate agent growth and recruiting group. Brokered by eXp Realty, LLC. No guarantee of leads, income, production, closings, revenue share, or recruiting outcomes. Agent experiences and testimonials reflect individual results, which may vary. © 2026 Freedom Partners Group. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+  var form = document.getElementById('leadForm');
+  var btn = document.getElementById('submitBtn');
+  var status = document.getElementById('formStatus');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    status.textContent = '';
+    status.className = 'form-status';
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+
+    var payload = {
+      name: document.getElementById('name').value,
+      phone: document.getElementById('phone').value,
+      email: document.getElementById('email').value,
+      brokerage: document.getElementById('brokerage').value,
+      revenue: document.getElementById('revenue').value,
+      newAgent: document.getElementById('newAgent').checked
+    };
+
+    fetch('/api/submit-lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+      .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, data: d }; }); })
+      .then(function (res) {
+        if (!res.ok || !res.data.ok) throw new Error(res.data.error || 'Submission failed');
+        form.reset();
+        status.textContent = 'Thanks — we\'ll follow up within one business day.';
+        status.className = 'form-status ok';
+      })
+      .catch(function (err) {
+        status.textContent = 'Something went wrong — ' + err.message + '. Please try again.';
+        status.className = 'form-status err';
+      })
+      .finally(function () {
+        btn.disabled = false;
+        btn.textContent = 'Request a Call';
+      });
+  });
+})();
+</script>
+
+</body>
+</html>
